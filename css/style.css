@@ -1,5 +1,6 @@
 /* ===== ROOT VARIABLES ===== */
 :root {
+  overflow-x: hidden;
   --primary: #1a73e8;
   --primary-dark: #1557b0;
   --primary-light: #e8f0fe;
