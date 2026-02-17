@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GoCar Rental - Layanan rental mobil terpercaya dengan armada berkualitas, harga terjangkau, dan pelayanan profesional.">
+    <title>GoCar Rental — Sewa Mobil Premium & Terpercaya</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-car-front-fill"></i> GoCar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="bi bi-list" style="font-size:1.5rem;color:var(--dark)"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/6281234567890" target="_blank"
+                    class="btn btn-primary-custom ms-lg-3 mt-2 mt-lg-0">
+                    <i class="bi bi-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80"
+                alt="Armada Mobil Premium GoCar Rental">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sewa Mobil Premium &<br>Terpercaya</h1>
+                <p>Rental mobil berkualitas menyediakan sewa berbagai jenis mobil premium, dengan persyaratan rental
+                    yang mudah dan cepat, tanpa ribet</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20sewa%20mobil" target="_blank"
+                    class="btn-hero-cta">
+                    <i class="bi bi-whatsapp"></i> Sewa Mobil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FLASH HIGHLIGHTS ===== -->
+    <section class="flash-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flash-card">
+                        <div class="flash-icon"><i class="bi bi-shield-check"></i></div>
+                        <h5>Asuransi Lengkap</h5>
+                        <p>Semua kendaraan diasuransikan untuk ketenangan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flash-card">
+                        <div class="flash-icon"><i class="bi bi-wallet2"></i></div>
+                        <h5>Harga Terjangkau</h5>
+                        <p>Tarif kompetitif tanpa biaya tersembunyi.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flash-card">
+                        <div class="flash-icon"><i class="bi bi-clock-history"></i></div>
+                        <h5>Layanan 24/7</h5>
+                        <p>Dukungan pelanggan siap kapan pun Anda butuhkan.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flash-card">
+                        <div class="flash-icon"><i class="bi bi-geo-alt"></i></div>
+                        <h5>Antar-Jemput Gratis</h5>
+                        <p>Layanan antar-jemput ke lokasi Anda tanpa biaya tambahan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FLEET SHOWCASE ===== -->
+    <section class="fleet-section" id="fleet" style="background:var(--bg-light)">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge-label"><i class="bi bi-grid-fill"></i> Armada Kami</span>
+                <h2>Pilihan Mobil Terbaik</h2>
+                <p>Berbagai jenis kendaraan siap menemani perjalanan Anda, dari city car hingga SUV premium.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Car 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600&q=80"
+                                alt="Toyota Avanza">
+                            <span class="car-badge">Populer</span>
+                        </div>
+                        <div class="car-body">
+                            <h5>Toyota Avanza</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 7 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Bensin</span>
+                                <span><i class="bi bi-gear"></i> Manual/AT</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 350K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Toyota%20Avanza"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80"
+                                alt="Toyota Innova">
+                            <span class="car-badge">Best Seller</span>
+                        </div>
+                        <div class="car-body">
+                            <h5>Toyota Innova Reborn</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 8 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Diesel</span>
+                                <span><i class="bi bi-gear"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 550K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Toyota%20Innova"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=80"
+                                alt="Honda HR-V">
+                        </div>
+                        <div class="car-body">
+                            <h5>Honda HR-V</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 5 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Bensin</span>
+                                <span><i class="bi bi-gear"></i> CVT</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 500K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Honda%20HR-V"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1606611013004-3eb280fa31e2?w=600&q=80"
+                                alt="Toyota Fortuner">
+                            <span class="car-badge">Premium</span>
+                        </div>
+                        <div class="car-body">
+                            <h5>Toyota Fortuner</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 7 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Diesel</span>
+                                <span><i class="bi bi-gear"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 900K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Toyota%20Fortuner"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=600&q=80"
+                                alt="Mitsubishi Pajero">
+                        </div>
+                        <div class="car-body">
+                            <h5>Mitsubishi Pajero Sport</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 7 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Diesel</span>
+                                <span><i class="bi bi-gear"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 850K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Pajero%20Sport"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80"
+                                alt="Honda Brio">
+                            <span class="car-badge">Hemat</span>
+                        </div>
+                        <div class="car-body">
+                            <h5>Honda Brio</h5>
+                            <div class="car-specs">
+                                <span><i class="bi bi-people"></i> 5 Orang</span>
+                                <span><i class="bi bi-fuel-pump"></i> Bensin</span>
+                                <span><i class="bi bi-gear"></i> CVT</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="price">Rp 250K <small>/hari</small></div>
+                                <a href="https://wa.me/6281234567890?text=Saya%20ingin%20sewa%20Honda%20Brio"
+                                    class="btn-book" target="_blank">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge-label"><i class="bi bi-stars"></i> Layanan Kami</span>
+                <h2>Solusi Transportasi Lengkap</h2>
+                <p>Kami menyediakan berbagai layanan rental yang dapat disesuaikan dengan kebutuhan Anda.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-key"></i></div>
+                        <h5>Lepas Kunci</h5>
+                        <p>Kebebasan berkendara tanpa supir dengan syarat mudah dan terpercaya.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-person-badge"></i></div>
+                        <h5>Dengan Supir</h5>
+                        <p>Supir profesional, berpengalaman, dan menguasai berbagai rute.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-building"></i></div>
+                        <h5>Rental Perusahaan</h5>
+                        <p>Paket khusus untuk kebutuhan operasional bisnis dan korporasi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-calendar-event"></i></div>
+                        <h5>Wedding & Event</h5>
+                        <p>Mobil mewah untuk pernikahan dan acara spesial Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge-label" style="background:rgba(96,165,250,0.2);color:#60a5fa"><i
+                        class="bi bi-trophy"></i> Kenapa Kami?</span>
+                <h2 style="color:#fff">Keunggulan GoCar Rental</h2>
+                <p style="color:rgba(255,255,255,0.7)">Kami berkomitmen memberikan layanan terbaik yang membuat
+                    perjalanan Anda tak terlupakan.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-car-front"></i></div>
+                        <h5>Armada Terawat</h5>
+                        <p>Setiap kendaraan melewati inspeksi ketat dan perawatan berkala.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-cash-stack"></i></div>
+                        <h5>Harga Transparan</h5>
+                        <p>Tanpa biaya tersembunyi. Apa yang Anda lihat, itulah yang Anda bayar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-headset"></i></div>
+                        <h5>CS Responsif</h5>
+                        <p>Tim kami siap membantu Anda 24 jam melalui WhatsApp dan telepon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-pin-map"></i></div>
+                        <h5>Delivery Service</h5>
+                        <p>Mobil diantar langsung ke lokasi Anda tanpa tambahan biaya.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-calendar-check"></i></div>
+                        <h5>Booking Mudah</h5>
+                        <p>Reservasi cepat via WhatsApp, tanpa proses berbelit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="bi bi-award"></i></div>
+                        <h5>Berpengalaman</h5>
+                        <p>Lebih dari 8 tahun pengalaman melayani ribuan pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY PREVIEW ===== -->
+    <section class="gallery-preview-section" id="gallery-preview" style="background:var(--bg-light)">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge-label"><i class="bi bi-images"></i> Gallery</span>
+                <h2>Dokumentasi Armada Kami</h2>
+                <p>Lihat koleksi foto kendaraan dan momen perjalanan bersama GoCar Rental.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80" alt="Gallery 1">
+                    <div class="gallery-overlay"><span>Armada Premium</span></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Gallery 2">
+                    <div class="gallery-overlay"><span>Kelas Mewah</span></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=600&q=80" alt="Gallery 3">
+                    <div class="gallery-overlay"><span>City Touring</span></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=600&q=80" alt="Gallery 4">
+                    <div class="gallery-overlay"><span>Adventure Trip</span></div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="gallery.html" class="btn btn-primary-custom">
+                    <i class="bi bi-arrow-right"></i> Lihat Semua Galeri
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5><i class="bi bi-car-front-fill" style="color:var(--primary)"></i> GoCar Rental</h5>
+                    <p>Layanan rental mobil terpercaya sejak 2016. Kami berkomitmen memberikan pengalaman berkendara
+                        terbaik dengan armada berkualitas dan pelayanan profesional.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Navigasi</h5>
+                    <ul>
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="tentang-kami.html"><i class="bi bi-chevron-right"></i> Tentang Kami</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Layanan</h5>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Sewa Lepas Kunci</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Sewa + Supir</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Rental Perusahaan</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Wedding Car</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-geo-alt"></i> Jl. Merdeka No. 123, Jakarta</a></li>
+                        <li><a href="tel:+6281234567890"><i class="bi bi-telephone"></i> 0812-3456-7890</a></li>
+                        <li><a href="mailto:info@gocar.id"><i class="bi bi-envelope"></i> info@gocar.id</a></li>
+                        <li><a href="#"><i class="bi bi-clock"></i> Senin - Minggu, 07:00 - 22:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GoCar Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="wa-float" title="Chat WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top" title="Kembali ke atas"><i class="bi bi-chevron-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
