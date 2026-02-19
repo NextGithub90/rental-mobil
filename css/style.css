@@ -1,13 +1,13 @@
 /* ===== ROOT VARIABLES ===== */
 :root {
   overflow-x: hidden;
-  --primary: #1a73e8;
-  --primary-dark: #1557b0;
-  --primary-light: #e8f0fe;
-  --accent: #ff6f00;
-  --accent-light: #fff3e0;
+  --primary: #C00000;       /* Premium Red */
+  --primary-dark: #8B0000;  /* Dark Red */
+  --primary-light: #FFEBEE; /* Light Red tint */
+  --accent: #D4AF37;        /* Metallic Gold */
+  --accent-light: #FEF9E7;  /* Light Gold tint */
   --dark: #1a1a2e;
-  --dark-secondary: #2d2d44;
+  --dark-secondary: #000000; /* Darker secondary for contrast */
   --text-primary: #212529;
   --text-secondary: #6c757d;
   --text-light: #ffffff;
@@ -82,22 +82,22 @@ section { padding: 80px 0; }
   color: #fff; border: none; padding: 14px 32px;
   border-radius: 50px; font-weight: 600; font-size: 1rem;
   transition: var(--transition); display: inline-flex; align-items: center; gap: 8px;
-  box-shadow: 0 4px 15px rgba(26,115,232,0.3);
+  box-shadow: 0 4px 15px rgba(192,0,0,0.3);
 }
 .btn-primary-custom:hover {
   transform: translateY(-3px); color: #fff;
-  box-shadow: 0 8px 25px rgba(26,115,232,0.4);
+  box-shadow: 0 8px 25px rgba(192,0,0,0.4);
 }
 .btn-accent-custom {
-  background: linear-gradient(135deg, var(--accent), #e65100);
+  background: linear-gradient(135deg, var(--accent), #B8860B);
   color: #fff; border: none; padding: 14px 32px;
   border-radius: 50px; font-weight: 600; font-size: 1rem;
   transition: var(--transition); display: inline-flex; align-items: center; gap: 8px;
-  box-shadow: 0 4px 15px rgba(255,111,0,0.3);
+  box-shadow: 0 4px 15px rgba(212,175,55,0.3);
 }
 .btn-accent-custom:hover {
   transform: translateY(-3px); color: #fff;
-  box-shadow: 0 8px 25px rgba(255,111,0,0.4);
+  box-shadow: 0 8px 25px rgba(212,175,55,0.4);
 }
 .btn-outline-custom {
   background: transparent; color: var(--primary);
@@ -229,7 +229,7 @@ section { padding: 80px 0; }
 .car-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
 .car-card .car-img {
   height: 220px; overflow: hidden; position: relative;
-  background: linear-gradient(135deg, #f0f4ff, #e8f0fe);
+  background: linear-gradient(135deg, #fff5f5, #ffebee);
 }
 .car-card .car-img img {
   width: 100%; height: 100%; object-fit: cover;
@@ -277,7 +277,7 @@ section { padding: 80px 0; }
   width: 80px; height: 80px; border-radius: var(--radius-md);
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 20px; font-size: 2rem;
-  background: linear-gradient(135deg, var(--primary-light), #dbeafe);
+  background: linear-gradient(135deg, var(--primary-light), #ffebee);
   color: var(--primary); transition: var(--transition);
 }
 .service-card:hover .service-icon {
@@ -301,7 +301,7 @@ section { padding: 80px 0; }
   width: 70px; height: 70px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 20px; font-size: 1.6rem;
-  background: rgba(26,115,232,0.2); color: #60a5fa;
+  background: rgba(192,0,0,0.1); color: var(--accent);
 }
 .why-card h5 { color: #fff; font-family: 'Inter', sans-serif; font-weight: 700; }
 .why-card p { color: rgba(255,255,255,0.7); }
@@ -428,7 +428,7 @@ section { padding: 80px 0; }
   padding: 14px 16px; font-size: 0.95rem; transition: var(--transition);
 }
 .contact-form-card .form-control:focus, .contact-form-card .form-select:focus {
-  border-color: var(--primary); box-shadow: 0 0 0 4px rgba(26,115,232,0.1);
+  border-color: var(--primary); box-shadow: 0 0 0 4px rgba(192,0,0,0.1);
 }
 
 /* ===== FAQ ===== */
@@ -489,7 +489,7 @@ section { padding: 80px 0; }
   background: var(--primary); color: #fff; border: none;
   font-size: 1.2rem; display: none; align-items: center;
   justify-content: center; cursor: pointer; transition: var(--transition);
-  box-shadow: 0 4px 15px rgba(26,115,232,0.3);
+  box-shadow: 0 4px 15px rgba(192,0,0,0.3);
 }
 .scroll-top.visible { display: flex; }
 .scroll-top:hover { transform: translateY(-3px); }
@@ -547,3 +547,21 @@ section { padding: 80px 0; }
   .scroll-top { right: 80px; bottom: 20px; }
 }
 
+/* ===== SCROLLBAR & SELECTION ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-light); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark); 
+}
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
