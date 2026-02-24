@@ -149,6 +149,22 @@ section { padding: 80px 0; }
   );
   z-index: 1;
 }
+/* Logo pojok kiri atas hero */
+.hero-logo {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  width: 87px;
+  z-index: 10;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5));
+}
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 100px;
+    top: 80px;
+    left: 20px;
+  }
+}
 .hero-section .container {
   position: relative;
   z-index: 2;
@@ -251,7 +267,7 @@ section { padding: 80px 0; }
 }
 .car-card .car-specs i { color: var(--primary); }
 .car-card .car-price {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: flex-end; justify-content: space-between;
   padding-top: 16px; border-top: 1px solid var(--border-color);
 }
 .car-card .car-price .price { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--primary); }
@@ -262,6 +278,19 @@ section { padding: 80px 0; }
   font-weight: 600; font-size: 0.85rem; transition: var(--transition);
 }
 .car-card .car-price .btn-book:hover { background: var(--primary-dark); transform: scale(1.05); }
+.car-card .car-body .car-subtitle {
+  font-family: 'Inter', sans-serif; font-size: 0.88rem;
+  color: var(--text-secondary); margin-bottom: 12px; font-style: italic;
+}
+.car-card .car-price .price-label {
+  font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  color: var(--text-secondary); font-weight: 500; margin-bottom: 2px;
+}
+.car-card .car-price .price-note {
+  font-family: 'Inter', sans-serif; font-size: 0.72rem;
+  color: var(--text-secondary); margin-top: 4px; line-height: 1.45;
+}
+
 
 /* ===== SERVICES ===== */
 .service-card {
