@@ -149,20 +149,21 @@ section { padding: 80px 0; }
   );
   z-index: 1;
 }
-/* Logo di navbar */
-.navbar-brand img {
-  height: 42px;
-  width: auto;
-  object-fit: contain;
-  transition: var(--transition);
+/* Logo pojok kiri atas hero */
+.hero-logo {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  width: 87px;
+  z-index: 10;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5));
 }
-.navbar-brand img:hover { opacity: 0.85; }
-/* Logo di footer */
-.footer-logo {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 4px;
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 100px;
+    top: 80px;
+    left: 20px;
+  }
 }
 .hero-section .container {
   position: relative;
