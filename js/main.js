@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const mobil = document.getElementById('mobil').value;
       const pesan = document.getElementById('pesan').value;
       
-      const waNumber = '6281234567890';
+      const waNumber = '628561141208';
       const waMessage = `Halo, saya ingin reservasi rental mobil.%0A%0ANama: ${nama}%0ATanggal Sewa: ${tanggal}%0AJenis Mobil: ${mobil}%0APesan: ${pesan}`;
       
       window.open(`https://wa.me/${waNumber}?text=${waMessage}`, '_blank');
